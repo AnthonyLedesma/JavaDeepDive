@@ -8,7 +8,7 @@ public class HelloWorld {
 public class PrintFavoriteNumber {
     public static void main(String args[]) {
         
-        int favoriteNumber = 28;
+        double favoriteNumber = 28.8;
         System.out.println("My favorite number is " + favoriteNumber);
     }
 }
