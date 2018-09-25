@@ -71,3 +71,22 @@ public class ListClass {
 
     }
 }
+
+
+import java.util.*;
+
+public class HashMapExample {
+    public static void main(String args[]) {
+
+      HashMap map = new HashMap();
+      
+      map.put("Father", "Anthony");
+      map.put("Mother", "Kristina");
+      System.out.println(map.get("Father"));
+      System.out.println(map.toString());
+      
+      map.remove("Father");
+      
+      System.out.println(map.toString());
+    }
+}
