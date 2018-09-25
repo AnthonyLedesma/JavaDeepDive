@@ -72,7 +72,6 @@ public class ListClass {
     }
 }
 
-
 import java.util.*;
 
 public class HashMapExample {
@@ -88,5 +87,28 @@ public class HashMapExample {
       map.remove("Father");
       
       System.out.println(map.toString());
+    }
+}
+
+// this function will generate random numbers between 1-100 and uses if logic to
+// display a string explaining the comparison.
+import java.util.*;
+
+public class IfStatementsExamaple {
+    public static void main(String args[]) {
+
+        List<Integer> list = new ArrayList();
+        Random rando = new Random();
+
+        list.add(rando.nextInt(100) + 1);
+        list.add(rando.nextInt(100) + 1);
+
+        if (list.get(0) > list.get(1)) {
+            System.out.println("Array element 0 is higher : " + list.get(0) + " > " + list.get(1));
+        } else if (list.get(0) == list.get(1)) {
+            System.out.println("The numbers are the same : " + list.get(0) + " == " + list.get(1));
+        } else {
+            System.out.println("Array element 1 is higher : " + list.get(1) + " > " + list.get(0));
+        }
     }
 }
