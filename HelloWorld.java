@@ -35,3 +35,39 @@ public class WorkingWithStrings {
         System.out.println(myString.length());
     }
 }
+
+public class CombineMyAgeCharacterLength {
+    public static void main(String args[]) {
+
+        String first = "Anthony";
+        String last = "Ledesma";
+
+        int val = first.length() + last.length();
+
+        System.out.println("Your name is " + first + " " + last + ".");
+        System.out.println("Your first name is " + first.length() + " characters long.");
+        System.out.println("Your last name is " + last.length() + " characters long.");
+
+        System.out.println("That means that your total name length would be " + val + " characters long.");
+
+    }
+}
+
+import java.util.*;
+
+public class ListClass {
+    public static void main(String args[]) {
+
+        List list = new ArrayList();
+        list.add("United States");
+        list.add("Great Britain");
+        list.add("Canada");
+        System.out.println(list.toString());
+
+        list.remove(1);
+        list.add("Germany");
+
+        System.out.println(list.toString());
+
+    }
+}
