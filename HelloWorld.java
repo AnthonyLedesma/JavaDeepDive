@@ -92,16 +92,17 @@ public class HashMapExample {
 
 // this function will generate random numbers between 1-100 and uses if logic to
 // display a string explaining the comparison.
+// edited to use int[] array instead of an arrayList;
 import java.util.*;
 
 public class IfStatementsExamaple {
     public static void main(String args[]) {
 
-        List<Integer> list = new ArrayList();
+        //List<Integer> list = new ArrayList();
         Random rando = new Random();
 
-        list.add(rando.nextInt(100) + 1);
-        list.add(rando.nextInt(100) + 1);
+        //list.add(rando.nextInt(100) + 1);
+        //list.add(rando.nextInt(100) + 1);
 
         if (list.get(0) > list.get(1)) {
             System.out.println("Array element 0 is higher : " + list.get(0) + " > " + list.get(1));
