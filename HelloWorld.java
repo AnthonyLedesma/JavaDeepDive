@@ -164,5 +164,14 @@ public class loopsExamples {
     }
 }
 
+public class moreLoopsExamples {
+    public static void main(String args[]) {
+    
+    String[] familyMembers = {"Anthony","Kristina","Olivia","Eli"};
+    
+    for (String name : familyMembers)
+    System.out.println(name);
+    }
+}
 
 
