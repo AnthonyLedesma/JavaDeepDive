@@ -208,3 +208,72 @@ public class ClassesExample {
         System.out.println(bob.hasWon());
     }
 }
+
+// Advanced class example.
+import java.util.*;
+
+public class positiveNegative {
+    public static void main(String args[]) {
+
+        class PosCheck {
+            Random rando = new Random();
+            int x = rando.nextInt(100) - 50;
+
+            public boolean isPos() {
+                if (x > 0) {
+                    return true;
+                } else if (x < 0) {
+                    return false;
+                } else {
+                    return false;
+                }
+            }
+
+        }
+        ;
+        PosCheck anthony = new PosCheck();
+        System.out.println(anthony.isPos());
+        System.out.println(anthony.x);
+    }
+}
+
+
+import java.util.*;
+
+public class positiveNegative {
+    public static void main(String args[]) { 
+     
+        class GivenNumber{
+            int x;
+            
+          
+            boolean isPerfectSquare(double x)  
+            { 
+          
+                // Find floating point value of 
+                // square root of x. 
+                double sr = Math.sqrt(x); 
+      
+                // If square root is an integer 
+                return ((sr - Math.floor(sr)) == 0); 
+            }
+            
+            
+            boolean isTriangularNumber(long num) {
+                long calc_num = 8*num+1;
+                long t = (long) Math.sqrt(calc_num);
+                if (t*t==calc_num) {
+                 return true;
+                }
+                return false;
+            }
+            
+        }
+        GivenNumber anthony = new GivenNumber();
+        anthony.x = 2500;
+        System.out.println(anthony.isPerfectSquare(anthony.x));
+        System.out.println(anthony.isTriangularNumber(anthony.x));
+    }
+    
+    
+}
