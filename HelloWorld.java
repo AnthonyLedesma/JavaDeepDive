@@ -125,52 +125,47 @@ public class IfStatementsExamaple {
     }
 }
 
-
 public class loopsExamples {
     public static void main(String args[]) {
-        
-       System.out.println("Y is : " + 0);
-        for (int y = 0; y <=100; y++){
+
+        System.out.println("Y is : " + 0);
+        for (int y = 0; y <= 100; y++) {
             if (isTriangular(y)) {
                 System.out.println("Y is : " + y);
             }
-            
+
         }
-        
-     
-        
+
     }
-    
-            // Returns true if 'num' is  
-            // triangular, else false 
-    static boolean isTriangular(int num) 
-    { 
-        // Base case 
-        if (num < 0) 
-            return false; 
-      
-        // A Triangular number must be 
-        // sum of first n natural numbers 
-        int sum = 0; 
-          
-        for (int n = 1; sum <= num; n++) 
-        { 
-            sum = sum + n; 
-            if (sum == num) 
-                return true; 
-        } 
-      
-        return false; 
+
+    // Returns true if 'num' is
+    // triangular, else false
+    static boolean isTriangular(int num) {
+        // Base case
+        if (num < 0)
+            return false;
+
+        // A Triangular number must be
+        // sum of first n natural numbers
+        int sum = 0;
+
+        for (int n = 1; sum <= num; n++) {
+            sum = sum + n;
+            if (sum == num)
+                return true;
+        }
+
+        return false;
     }
 }
 
 public class moreLoopsExamples {
     public static void main(String args[]) {
-    
-    String[] familyMembers = {"Anthony","Kristina","Olivia","Eli"};
-    
-    for (String name : familyMembers)
-    System.out.println(name);
+
+        String[] familyMembers = { "Anthony", "Kristina", "Olivia", "Eli" };
+
+        for (String name : familyMembers)
+            System.out.println(name);
     }
 }
 
@@ -187,5 +182,29 @@ public class forEachLoopExample {
     
     for (String name : familyMembers)
     System.out.println(name);
+    }
+}
+
+import java.util.*;
+
+public class ClassesExample {
+    public static void main(String args[]) {
+
+        class User {
+            int score;
+
+            public boolean hasWon() {
+                if (score >= 100) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
+        ;
+
+        User bob = new User();
+        bob.score = 101;
+        System.out.println(bob.hasWon());
     }
 }
