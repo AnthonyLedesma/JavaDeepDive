@@ -129,19 +129,40 @@ public class IfStatementsExamaple {
 public class loopsExamples {
     public static void main(String args[]) {
         
-        int x = 1;
-        
-        while (x <= 5){
-            System.out.println("X is : " + 2 * x);
-            x++;
+       System.out.println("Y is : " + 0);
+        for (int y = 0; y <=100; y++){
+            if (isTriangular(y)) {
+                System.out.println("Y is : " + y);
+            }
+            
         }
         
-        
-        for (int y =1; y <=10; y++){
-            System.out.println("Y is : " + y);
-        }
+     
         
     }
+    
+            // Returns true if 'num' is  
+            // triangular, else false 
+    static boolean isTriangular(int num) 
+    { 
+        // Base case 
+        if (num < 0) 
+            return false; 
+      
+        // A Triangular number must be 
+        // sum of first n natural numbers 
+        int sum = 0; 
+          
+        for (int n = 1; sum <= num; n++) 
+        { 
+            sum = sum + n; 
+            if (sum == num) 
+                return true; 
+        } 
+      
+        return false; 
+    }
 }
+
 
 
