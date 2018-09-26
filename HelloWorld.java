@@ -132,10 +132,16 @@ public class loopsExamples {
         int x = 1;
         
         while (x <= 5){
-            System.out.println(2 * x);
+            System.out.println("X is : " + 2 * x);
             x++;
+        }
+        
+        
+        for (int y =1; y <=10; y++){
+            System.out.println("Y is : " + y);
         }
         
     }
 }
+
 
