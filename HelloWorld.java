@@ -237,43 +237,43 @@ public class positiveNegative {
     }
 }
 
+import java.util.*;
 
 import java.util.*;
 
 public class positiveNegative {
-    public static void main(String args[]) { 
-     
-        class GivenNumber{
+    public static void main(String args[]) {
+
+        class GivenNumber {
             int x;
-            
-          
-            boolean isPerfectSquare(double x)  
-            { 
-          
-                // Find floating point value of 
-                // square root of x. 
-                double sr = Math.sqrt(x); 
-      
-                // If square root is an integer 
-                return ((sr - Math.floor(sr)) == 0); 
+
+            boolean isPerfectSquare(double x) {
+
+                // Find floating point value of
+                // square root of x.
+                double sr = Math.sqrt(x);
+
+                // If square root is an integer
+                return ((sr - Math.floor(sr)) == 0);
             }
-            
-            
+
             boolean isTriangularNumber(long num) {
-                long calc_num = 8*num+1;
+                long calc_num = 8 * num + 1;
                 long t = (long) Math.sqrt(calc_num);
-                if (t*t==calc_num) {
-                 return true;
+                if (t * t == calc_num) {
+                    return true;
                 }
                 return false;
             }
-            
+
         }
         GivenNumber anthony = new GivenNumber();
         anthony.x = 2500;
-        System.out.println(anthony.isPerfectSquare(anthony.x));
-        System.out.println(anthony.isTriangularNumber(anthony.x));
+
+        String output = String.format(
+                "You entered the number %d. It is %s that the number is a perfect square and it is %s that the number is a triangular number",
+                anthony.x, anthony.isPerfectSquare(anthony.x), anthony.isTriangularNumber(anthony.x));
+        System.out.println(output);
     }
-    
-    
+
 }
