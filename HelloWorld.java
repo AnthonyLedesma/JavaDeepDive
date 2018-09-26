@@ -174,4 +174,18 @@ public class moreLoopsExamples {
     }
 }
 
+import java.util.*;
 
+public class forEachLoopExample {
+    public static void main(String args[]) {
+    
+    List<String> familyMembers = new ArrayList();
+    familyMembers.add("Anthony");
+    familyMembers.add("Kristina");
+    familyMembers.add("Olivia");
+    familyMembers.add("Eli");
+    
+    for (String name : familyMembers)
+    System.out.println(name);
+    }
+}
